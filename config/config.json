@@ -1,0 +1,8 @@
+{
+  "maxRequestEmails": 10,
+  "mailQuery": "is:unread",
+  "EmailCheckIntervalInSeconds": 10,
+  "GmailsLables": [
+    "INBOX"
+  ]
+}

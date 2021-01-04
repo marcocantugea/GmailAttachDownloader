@@ -80,10 +80,7 @@ class LocalStorage:
         fileNameToExtract = fileName is None and self.pathName + "/" + self.fileName or fileName
         return Path(fileNameToExtract).read_bytes()
 
-    def saveFileContent(self, content, fileName=None):
-        mode = "w+"
-        if Path(self.pathName + "/" + self.fileName).exists():
-            mode = "a+"
+    def saveFileContent(self, content, fileName=None, mode="w+"):
 
         if content is None:
             return None

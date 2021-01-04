@@ -1,8 +1,10 @@
 {
-  "maxRequestEmails": 10,
-  "mailQuery": "is:unread",
+  "applicationName": "GmailAttachmentsDownloader",
+  "maxRequestEmails": 500,
+  "mailQuery": "after:2009/01/01 before:2011/01/01 has:attachment",
   "EmailCheckIntervalInSeconds": 10,
   "GmailsLables": [
     "INBOX"
-  ]
+  ],
+  "folderToDownloadFiles": "Downloads"
 }
